@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(./images/hero-bg.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sidebar{
+    backdrop-filter: blur(5px);
+    /* width: 200px; */
+    width: 65px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.158);
+    padding: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.logo{
+    padding-left: 5px;
+    user-select: none;
+    display: flex;
+    margin-right: -25px;
+    align-items: center;
+    position: relative!important;
+}
+.logo h1{
+    background-color: #289eff;
+    padding: 5px 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.details{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+.details h2{
+    font-size: 1em;
+}
+.details p{
+    font-size: 0.8em;
+}
+.details h2,p{
+    user-select: none;
+    /* color: gray; */
+    line-height: 20px;
+}
+.logo i{
+    cursor: pointer;
+    background-color: #289eff;
+    width: 25px;
+    height: 25px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.links{
+    overflow: hidden;
+    height: 85vh;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.links ul li a p{
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.search-box input{
+    opacity: 0;
+    width: 80%;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    background-color: #dee7eec2;
+    font-size: 1em;
+    color: rgb(155, 155, 155);
+    transition: opacity 0.3s ease;
+}
+
+.links ul li a i,.search-box i{
+    display: block;
+    font-size: 1.4em;
+    width: 40px;
+}
+.links ul li a,.search-box{
+    line-height: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.links ul li a:hover{
+    background-color: #dee7eec2;
+}
+.search-box{
+    background-color: #dee7eec2;
+    position: relative;
+    justify-content: end;
+}
+
+.bottom>li a i{
+    font-size: 1.4em!important;
+}
