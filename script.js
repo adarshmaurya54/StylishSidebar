@@ -39,13 +39,6 @@ togglebtn.addEventListener("click", function () {
         for (let j = 2; j < pTags.length; j++) {
             pTags[j].style.opacity = "0";
         }
-        // setTimeout(function () {
-        //     inputbox.style.opacity = "1";
-        //     searchIcon.style.left = "0px";
-        //     for (let j = 2; j < pTags.length; j++) {
-        //         pTags[j].style.opacity = "1";
-        //     }
-        // }, 1000)
     }
     i++;
 });
